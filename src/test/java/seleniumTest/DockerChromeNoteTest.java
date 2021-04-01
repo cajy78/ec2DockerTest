@@ -18,7 +18,7 @@ public class DockerChromeNoteTest {
 		desiredCapabilities.setBrowserName("chrome");
 		desiredCapabilities.setPlatform(Platform.LINUX);
 		
-		driver = new RemoteWebDriver(new URL("http://35.175.134.222:4444/wd/hub"), desiredCapabilities);
+		driver = new RemoteWebDriver(new URL("http://172.31.62.30:4444/wd/hub"), desiredCapabilities);
 		
 		driver.get("https://www.google.com");
 		System.out.println(driver.getTitle());
